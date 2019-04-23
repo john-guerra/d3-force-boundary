@@ -1,0 +1,49 @@
+{
+  "name": "d3-force-boundary",
+  "version": "0.0.1",
+  "description": "A d3 force for making nodes stay inside a boundary",
+  "keywords": [
+    "d3",
+    "d3-module",
+    "layout",
+    "network",
+    "graph",
+    "force",
+    "infovis"
+  ],
+  "homepage": "https://d3js.org/d3-force/",
+  "license": "BSD-3-Clause",
+  "author": {
+    "name": "John Alexis Guerra Gómez",
+    "url": "https://johnguerra.co"
+  },
+  "main": "dist/d3-force-boundary.js",
+  "unpkg": "dist/d3-force-boundary.min.js",
+  "jsdelivr": "dist/d3-force-boundary.min.js",
+  "module": "dist/d3-force-boundary.esm.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/d3/d3-force.git"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "pretest": "npm run build"
+  },
+  "files": [
+    "src/**/*.js",
+    "dist/**/*.js"
+  ],
+  "dependencies": {
+    "d3-force": "^2.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "prettier": "^1.16.4",
+    "rollup": "^0.65.0",
+    "rollup-plugin-ascii": "0.0.3",
+    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-terser": "^2.0.2"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "d3-force-boundary",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A d3 force for making nodes stay inside a boundary",
   "keywords": [
     "d3",

@@ -11,7 +11,7 @@
     "force",
     "infovis"
   ],
-  "homepage": "https://d3js.org/d3-force/",
+  "homepage": "https://observablehq.com/@john-guerra/d3-force-boundary",
   "license": "BSD-3-Clause",
   "author": {
     "name": "John Alexis Guerra Gómez",
@@ -23,7 +23,7 @@
   "module": "dist/d3-force-boundary.esm.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/d3/d3-force.git"
+    "url": "https://github.com/john-guerra/d3-force-boundary.git"
   },
   "scripts": {
     "build": "rollup -c",

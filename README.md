@@ -65,3 +65,5 @@ With modules
 ```
 npm install d3-force-boundary
 ```
+
+[Observable demo](https://observablehq.com/@john-guerra/d3-force-boundary)

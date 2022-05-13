@@ -12,7 +12,6 @@ export default function forceBoundary(x0, y0, x1, y1) {
       borderz,
       halfX, halfY;
 
-
   if (typeof x0 !== "function") x0 = constant(x0 == null ? -100 : +x0);
   if (typeof x1 !== "function") x1 = constant(x1 == null ? 100 : +x1);
   if (typeof y0 !== "function") y0 = constant(y0 == null ? -100 : +y0);
@@ -25,14 +24,15 @@ export default function forceBoundary(x0, y0, x1, y1) {
   function force(alpha) {
     for (var i = 0, n = nodes.length, node; i < n; ++i) {
       node = nodes[i];
-
+      // debugger;
       if ((node.x < (x0z[i] + borderz[i]) || node.x > (x1z[i] - borderz[i])) ||
-          (node.y < (y0z[i] + borderz[i]) || node.y > (y1z[i] - borderz[i])) ) {
+        (node.y < (y0z[i] + borderz[i]) || node.y > (y1z[i] - borderz[i]))) {
         node.vx += getVx(halfX[i], node.x, strengthsX[i], borderz[i], alpha);
         node.vy += getVx(halfY[i], node.y, strengthsY[i], borderz[i], alpha);
-      } else {
-        node.vx = 0;
-        node.vy = 0;
+      } else if (node.y < (y0z[i] + borderz[i]) || node.y > (y1z[i] - borderz[i])) {
+
+        // node.vx = 0;
+        // node.vy = 0;
       }
 
       if (hardBoundary) {
